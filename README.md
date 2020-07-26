@@ -32,7 +32,7 @@ One day I needed a place to write my tasks in a way that I could always look at 
 
 There are a couple reasons why I love this project:
 * It's **scalable**, with the possibility to implement a lot of functionalities
-* It's **didactic**, because I learned new things about Vanilla Javascript, SQLite and Web development
+* It's **didactic**, because I learned new things about Javascript, SQLite and Web development
 * It's **useful**, at least to me :)
 
 ## Build with
