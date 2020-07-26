@@ -26,7 +26,7 @@ npm start
 
 ## What's behind this project?
 
-One day I needed a place to write my tasks in a way that I could always look at them in my computer. Surfing the internet, I found different solutions, all of them rich of beautiful features that I didn't need. So, I started to think that I could do something on my own.
+One day I needed a place to write my tasks in a way that I could always look at them in my computer. Surfing the internet, I found different solutions, all rich of beautiful features that I didn't need. So, I started to think that I could do something on my own.
 
 ## Why I love it
 
