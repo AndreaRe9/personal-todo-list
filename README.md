@@ -39,5 +39,5 @@ There are a couple reasons why I love this project:
 * Node.js 12.18
 * Electron 9.1.0
 
-## Licence
+## License
 This project is licensed under the MIT License.
