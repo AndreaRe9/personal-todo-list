@@ -2,7 +2,7 @@
 An offline, simple and easy to use todo list app.
 Without any special feature, this app is just what you need to plan your jobs.
 
-[gif]
+![](https://github.com/AndreaRe9/personal-todo-list/blob/master/image.png)
 
 ## How to use?
 To clone the repository and use this app, you need to have [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/) installed. If you don't want to install Git, you can just download the folder from GitHub web.
