@@ -36,8 +36,9 @@ There are a couple reasons why I love this project:
 * It's **useful**, at least to me :)
 
 ## Build with
-* Node.js 12.18
-* Electron 9.1.0
+* [Node.js](https://nodejs.org/en/download/) 12.18
+* [Electron](https://www.electronjs.org/) 9.1.0
+* Vanilla Javascript, without any library involved
 
 ## License
 This project is licensed under the MIT License.
