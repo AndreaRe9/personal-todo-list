@@ -13,7 +13,7 @@ git clone https://github.com/AndreaRe9/personal-todo-list
 ```
 Then go inside the folder
 ```
-cd personal-todo
+cd personal-todo-list
 ```
 Install all the dependencies
 ```
