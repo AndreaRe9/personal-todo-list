@@ -9,7 +9,7 @@ To clone the repository and use this app, you need to have [Git](https://git-scm
 
 First, clone this repository:
 ```
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/AndreaRe9/personal-todo-list
 ```
 Then go inside the folder
 ```
@@ -39,3 +39,5 @@ There are a couple reasons why I love this project:
 * Node.js 12.18
 * Electron 9.1.0
 
+## Licence
+This project is licensed under the MIT License.
