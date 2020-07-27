@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html lang="eng">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Simple and easy todo list app">
+        <meta name="author" content="AndreaRe9">
+        <title>Personal TODO</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <script src="../js/main.js"></script>
+
+      </head>
+      <body>
+        <div id="floating">
+          <a href="#" class="float_btn" id="newevent">
+            <i class="fa fa-plus fa plus_btn"></i>
+          </a>
+          <div id="float-menu">
+            <ul id="days">
+            </ul>
+          </div>
+        </div>
+
+        <header>
+            <div class="container">
+                <div id="branding">
+                  <i class="fa fa-bars fa-2x menu rotate" id="menu_i"></i>
+                  <h1>Todo List</h1>
+                </div>
+            </div>
+        </header>
+        <section class="left_menu" id="sidebar">
+          <ul>
+            <li class="section selected" id="today">
+              <i class="fa fa-fw fa-home"></i> Today
+              <div class="counter">
+                <p class="counter-value"></p>
+              </div>
+            </li>
+            <li class="section" id="this-week">
+              <i class="fa fa-calendar"></i>This week
+              <div class="counter">
+                <p class="counter-value"></p>
+              </div>
+            </li>
+            <li class="section" id="long-term">
+              <i class="fa fa-bookmark"></i> Long Term
+              <div class="counter">
+                <p class="counter-value"></p>
+              </div>
+            </li>
+          </ul>
+          <div class="info_panel">
+            <div class="month">
+              <ul>
+                <li id="prev-month">&#10094;</li>
+                <li id="next-month">&#10095;</li>
+                <li id="month-name"></li>
+              </ul>
+            </div>
+            <div class="day-of-week">
+              <div>Mo</div>
+              <div>Tu</div>
+              <div>We</div>
+              <div>Th</div>
+              <div>Fr</div>
+              <div>Sa</div>
+              <div>Su</div>
+            </div>
+            <div class="date-grid" id="grid-days">
+
+            </div>
+          </div>
+        </section>
+        <section class="right_menu" id="pane">
+          <div class="headline">
+            <div class="title">
+              <h2 id="section_title">How about <span id="current">today</span>?</h2>
+            </div>
+          </div>
+          <div class="short-break"></div>
+          <div class="main-content">
+            <div class="list">
+              <ul id="todos-container">
+              </ul>
+            </div>
+          </div>
+        </section>
+      </body>
+    </html>
