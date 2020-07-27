@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0;
+    margin:0;
+    background-color: #fff;
+  }
+
+.container{
+    width: 100%;
+    max-height: 50px;
+    min-height: 50px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+.float_btn{
+	position:fixed;
+	width:65px;
+	height:65px;
+	bottom:30px;
+	right:30px;
+	background-color:#4c6ef5;
+	color:#FFF;
+	border-radius:60px;
+	text-align:center;
+    box-shadow: 2px 2px 3px #999;   
+    z-index: 999;
+}
+
+#float-menu{
+    position:fixed;
+    display:none;
+    -webkit-transition: opacity 150ms linear;
+    transition: opacity 150ms linear;
+    bottom: 100px;
+    right: 30px;
+    min-width: 150px;
+    min-height: 200px;
+    border-radius: 10px;
+    z-index: 999;
+    /*background: #eceffe;*/
+}
+
+#float-menu ul{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+#days li{
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    display: block;
+}
+
+#days li:hover{
+    text-decoration: underline;
+    transition: 0.1s;
+    transform: scale(1.1);
+}
+
+.float_btn:hover{
+    transform: scale(0.9);
+}
+
+.plus_btn{
+    margin-top: 25px;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+  }
+
+/* Header */
+header{
+    background: #4c6ef5;
+    color: #ffffff;
+    min-height: 50px;
+}
+
+header #branding{
+    width:100%;
+    display: inline-block;
+}
+header #branding h1{
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+}
+
+header .fa-bars {
+    padding: 0 20px 0 20px;
+    margin-top: 10px;
+    float: left;
+}
+
+header i:hover{
+    transform: scale(0.9);
+}
+
+
+/* Left bar */
+.left_menu {
+    position: fixed;
+    top: 50px;
+    left: -450px;
+    bottom: 0;
+    max-width: 450px;
+    min-width: 200px;
+    width:20%;
+    background: #fff;
+    border-right: 1px solid #c0c0c0;
+    transition: .2s;
+    z-index: 1;
+}
+.left_menu li{
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    display: block;
+}
+
+.left_menu li i{
+    margin-right: 10px;
+}
+
+.section:hover{
+    box-shadow: 2px 2px 3px #999; 
+}
+
+.selected {
+    color: #4c6ef5;
+    font-weight: 1000;
+    box-shadow: 2px 2px 3px #999;
+    border: 0.5px solid #999;
+}
+
+.counter {
+    float: right;
+    max-width: 40px;
+    max-height: 25px;
+}
+
+.counter p{
+    margin: 0;
+}
+
+.open_menu{
+    left: 0;
+}
+
+
+.info_panel{
+    margin-top: 30px;
+    min-height: 250px;
+    height: 40%;
+}
+
+/* Month header */
+.month {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 1000;
+    color: #4c6ef5;
+    border-bottom: 1px solid #4c6ef5;
+}
+
+#prev-month {
+    float: left;
+}
+
+#next-month {
+    float: right;
+}
+
+#prev-month:hover, #next-month:hover, #month-name:hover{
+    color: #00a8e8;
+}
+
+.currentDay {
+    background: #4c6ef5 !important;
+    color: #fff;
+}
+
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month li {
+    display: inline-block;
+
+}
+
+#month-name {
+    padding: 0;
+    font-size: 18px;
+}
+
+.day-of-week,
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day-of-week {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.date-grid{
+    padding-left: 5px;
+    padding-right: 5px;
+    min-height: 200px;
+}
+
+ /* Positioning the first day on a Friday */
+ .date-grid button:first-child {
+    grid-column: 6;
+}
+
+.date-grid button {
+    padding: 0;
+    margin: 0;
+    border: 0.5px solid #c0c0c0;
+    border-top:none;
+    border-left:none;
+    background: #fff;
+}
+
+/* Right pane */
+.right_menu {
+    position: fixed;
+    overflow-y: auto;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    min-width: 300px;
+    width:100%;
+    background: #fff;
+    transition: .1s;
+    margin-left: 25px;
+}
+
+.adapt_pane {
+    width: 80%;
+}
+
+.headline {
+    width: 100%;
+    min-height: 50px;
+    background: #fff;
+    display: inline-block;
+}
+
+.title {
+    float:left;
+    margin: 15px 10px 10px 15px;
+}
+
+.title h2 {
+    margin: 0;
+    padding: 20px 45px 0 45px;
+    font-size: 24px;
+    color: black;
+}
+
+.short-break {
+    min-width: 250px;
+    width: 40%;
+    float:left;
+    height:1.5px;
+    border-width:0;
+    background-color:#c0c0c0;
+    margin: 0px 45px 0 45px;
+}
+
+
+.list {
+    margin: 15px 45px 15px 45px;
+}
+
+.list-row{
+    position: relative;
+    width: 90%;
+    min-height: 40px;
+    padding: 0 10px 0 20px;
+    display: inline-block;
+    box-shadow: 1px 1px 2.5px #999; 
+    opacity: 1;
+    -webkit-transition: opacity 250ms linear;
+    transition: opacity 250ms linear;
+}
+
+.list-row:hover {
+    transform: scale(1.01);
+}
+
+.day-label {
+    position: absolute;
+    height: 100%;
+    float:left;
+    display: inline-block;
+    min-height: 40px;    
+}
+
+.day-label p {
+    min-width: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin:0;
+    color: #fff;
+}
+
+.day-one {
+    background-color: #6930c3;
+}
+.day-two {
+    background-color: #e76f51;
+}
+.day-three {
+    background-color: #53dd6c;
+}
+.day-four {
+    background-color: #2a9d8f;
+}
+.day-five {
+    background-color: #1d3557;
+}
+.day-six {
+    background-color: #f94144;
+}
+
+.day-seven {
+    background-color: #00a8e8;
+}
+
+.tools {
+    float: right;
+    min-width: 50px;
+    min-height: 30px;
+    margin: 10px 5px 5px 10px;
+}
+
+.tools i {
+    color: #4c6ef5;
+    padding: 10px 5px 10px 5px;
+}
+
+.show-tools {
+    opacity: 1;
+}
+
+.hide-tools {
+    opacity: 0;
+}
+
+.tools .priority{
+    float: right;
+}
+
+.tools .relevant {
+    color: #f1de02;
+    opacity: 1;
+}
+
+.priority:active{
+    transform: translateY(2px);
+}
+
+.done {
+    padding-left: 2px;
+    color: #4c6ef5;
+}
+
+@media (max-width: 350px){
+    .done {
+        top:30%;
+    }
+}
+
+.list-box {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #222222;
+    margin: 15px 15px 15px 30px;
+    float: left;
+}
+
+.list-text{
+    width: fit-content;
+    max-width: 75%;
+    float:left;
+    font-size: 18px;
+    margin: 5px;
+    padding: 12px 15px 15px 0px;
+    color: #222222;
+    text-overflow: ellipsis;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+[contenteditable="true"].line {
+    white-space: nowrap;
+    overflow: hidden;
+} 
+[contenteditable="true"].line br {
+    display: none;
+}
+[contenteditable="true"].line * {
+    display:inline;
+    white-space:nowrap;
+}
+
+/* Animation effects */
+.rotate{
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.rotate.down{
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
