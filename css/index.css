@@ -18,15 +18,15 @@ body{
   }
 
 .float_btn{
-	position:fixed;
-	width:65px;
-	height:65px;
-	bottom:30px;
-	right:30px;
-	background-color:#4c6ef5;
-	color:#FFF;
-	border-radius:60px;
-	text-align:center;
+    position:fixed;
+    width:65px;
+    height:65px;
+    bottom:30px;
+    right:30px;
+    background-color:#4c6ef5;
+    color:#FFF;
+    border-radius:60px;
+    text-align:center;
     box-shadow: 2px 2px 3px #999;   
     z-index: 999;
 }
@@ -223,11 +223,6 @@ header i:hover{
     padding-left: 5px;
     padding-right: 5px;
     min-height: 200px;
-}
-
- /* Positioning the first day on a Friday */
- .date-grid button:first-child {
-    grid-column: 6;
 }
 
 .date-grid button {
